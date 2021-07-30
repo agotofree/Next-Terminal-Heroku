@@ -1,27 +1,3 @@
-# build:
-#   docker:
-#     web: Dockerfile
-version: '3.3'
-services:
-  mysql:
-    image: mysql:8.0
-    environment:
-      MYSQL_DATABASE: next-terminal
-      MYSQL_USER: next-terminal
-      MYSQL_PASSWORD: next-terminal
-      MYSQL_ROOT_PASSWORD: next-terminal
-    ports:
-      - "3306:3306"
-  next-terminal:
-    image: "dushixiang/next-terminal:latest"
-    environment:
-      DB: "mysql"
-      MYSQL_HOSTNAME: "mysql"
-      MYSQL_PORT: 3306
-      MYSQL_USERNAME: "next-terminal"
-      MYSQL_PASSWORD: "next-terminal"
-      MYSQL_DATABASE: "next-terminal"
-    ports:
-      - "80:8088"
-    depends_on:
-      - mysql
+build:
+  docker:
+    web: Dockerfile
