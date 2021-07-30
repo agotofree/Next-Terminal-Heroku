@@ -1,2 +1,2 @@
 FROM dushixiang/next-terminal:latest
-EXPOSE 80:8088
+EXPOSE 8088
