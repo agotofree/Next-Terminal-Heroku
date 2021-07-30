@@ -6,6 +6,6 @@
     "repository": "https://github.com/agotofree/Next-Terminal-Heroku",
     "stack": "container",
     "env": {
-        PORT:8088
+        "port":8088
   },
 }
