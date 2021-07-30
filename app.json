@@ -4,5 +4,6 @@
     "keywords": ["Next-Terminal"],   
     "website": "https://github.com/agotofree/Next-Terminal-Heroku/",
     "repository": "https://github.com/agotofree/Next-Terminal-Heroku",
-    "stack": "container"
+    "stack": "container",
+    "port":8088
 }
