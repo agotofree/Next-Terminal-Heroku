@@ -1,0 +1,4 @@
+FROM dushixiang/next-terminal:latest
+EXPOSE 8088
+ENV SERVER_PORT 80
+ENV SERVER_ADDR 0.0.0.0:$SERVER_PORT
